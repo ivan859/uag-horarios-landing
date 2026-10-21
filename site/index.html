@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Horarios UAG</title>
+<meta name="description" content="Horarios UAG: materias, profesores, alumnos, planes de estudio, cuatrimestre y calendario compartido entre departamentos.">
+<meta name="color-scheme" content="light dark">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;700;800&family=Open+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<nav class="nav" aria-label="Secciones">
+  <div class="wrap">
+    <a class="brand" href="#inicio">Horarios UAG</a>
+    <ul>
+      <li><a class="link" href="#materias">Materias</a></li>
+      <li><a class="link" href="#profesores">Profesores</a></li>
+      <li><a class="link" href="#alumnos">Alumnos</a></li>
+      <li><a class="link" href="#planes">Planes</a></li>
+      <li><a class="link" href="#cuatrimestre">Cuatrimestre</a></li>
+      <li><a class="link" href="#calendario">Calendario</a></li>
+    </ul>
+  </div>
+</nav>
+
+<main>
+<header class="hero" id="inicio">
+  <div class="wrap">
+    <p class="eyebrow">Kickoff · Octubre 2026</p>
+    <h1 class="h-xl">Cada cuatrimestre,<br><span class="hl">en un solo calendario.</span></h1>
+    <p class="lead">Materias, profesores y alumnos de todas las direcciones académicas, conectados para abrir secciones sin choques y con la demanda a la vista.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#calendario">Ver el calendario</a>
+      <a class="btn btn-ghost" href="#flujo">Cómo se conecta</a>
+    </div>
+    <div class="shot" id="heroShot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img src="img/calendar.webp" alt="Calendario semanal de lunes a sábado con secciones de Enfermería, Medicina, Nutrición y Psicología" width="1600" height="1346"></div>
+  </div>
+</header>
+
+<section class="section" id="flujo">
+  <div class="wrap">
+    <p class="eyebrow">Cómo se conecta todo</p>
+    <h2 class="h-l" style="margin-top:12px">Cinco catálogos alimentan <span class="hl">un solo calendario</span>.</h2>
+    <ol class="flow">
+      <li><b>Materias</b><span>Claves, créditos, prerrequisitos y equivalencias.</span></li>
+      <li><b>Planes</b><span>Qué materias lleva cada versión del plan.</span></li>
+      <li><b>Alumnos</b><span>Plan, estado e historial de aprobadas.</span></li>
+      <li><b>Profesores</b><span>Materias que imparten y su disponibilidad.</span></li>
+      <li><b>Cuatrimestre</b><span>Secciones, sesiones y cupos.</span></li>
+      <li class="goal"><b>Calendario</b><span>Todo junto, de lunes a sábado.</span></li>
+    </ol>
+    <p class="lead" style="margin-top:28px">Elegibilidad sale de materias, planes y alumnos. Los conflictos salen de profesores y secciones. El calendario solo es confiable si cada pieza lo es.</p>
+  </div>
+</section>
+
+<!-- MATERIAS -->
+<section class="section band" id="materias">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><p class="eyebrow">01 · Materias</p><h2 class="h-l" style="margin-top:12px">El catálogo de cada departamento, <span class="hl">conectado con los demás</span>.</h2></div>
+      <p class="lead">Cada dirección administra sus materias. Los prerrequisitos y las equivalencias pueden apuntar a materias de otros programas, así un alumno no repite lo que ya aprobó en otra licenciatura.</p>
+    </div>
+    <div class="gallery" data-gallery>
+      <div class="track" tabindex="0" aria-label="Pantallas de materias">
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/courses.webp" alt="Tabla de materias con clave, nombre, créditos, prerrequisitos, equivalencias, planes y estado"></div><figcaption><b>La tabla</b><span>Clave, nombre, créditos y estado, con prerrequisitos y equivalencias en la misma fila. Filtros por departamento y estado, búsqueda por clave.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/coursemodal.webp" alt="Modal Nueva materia con error de clave duplicada"></div><figcaption><b>Nueva materia</b><span>Departamento, clave, nombre, créditos y si está activa. La clave es única dentro del departamento y se valida antes de guardar.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/coursedetail.webp" alt="Detalle de ENF-204 con prerrequisitos, equivalencias y planes que la incluyen"></div><figcaption><b>Detalle de la materia</b><span>De qué depende, qué materias la requieren, con qué materias de otros programas equivale y en qué planes aparece.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/linkmodals.webp" alt="Modales para agregar prerrequisito con error de ciclo y vincular equivalencia"></div><figcaption><b>Prerrequisitos y equivalencias</b><span>Prerrequisitos en Y, de cualquier departamento y sin ciclos. Las equivalencias valen en ambos sentidos, no se encadenan y ambos departamentos las ven.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/importupload.webp" alt="Pantalla de importación con tipos de archivo y plantilla"></div><figcaption><b>Importar por CSV</b><span>Plantilla, archivo y validación sin guardar. Si una sola fila falla, no entra nada.</span></figcaption></figure>
+      </div>
+      <div class="g-ctrl"><button type="button" data-dir="-1" aria-label="Anterior">‹</button><button type="button" data-dir="1" aria-label="Siguiente">›</button></div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th style="width:18%">Orden · archivo</th><th style="width:52%">Columnas</th><th>Clave natural</th></tr></thead>
+        <tbody>
+          <tr><td>1 · Materias</td><td><code>department_code, course_code, name, credits, active</code></td><td>departamento + clave</td></tr>
+          <tr><td>2 · Prerrequisitos</td><td><code>department_code, course_code, requires_department_code, requires_course_code</code></td><td>materia + materia requerida</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Límites: 5 MB y 20,000 filas, UTF-8, separado por comas, con encabezado. Volver a subir el mismo archivo no cambia nada.</p>
+  </div>
+</section>
+
+<!-- PROFESORES -->
+<section class="section" id="profesores">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><p class="eyebrow">02 · Profesores</p><h2 class="h-l" style="margin-top:12px">Quién puede dar qué, <span class="hl">y cuándo</span>.</h2></div>
+      <p class="lead">Los profesores se comparten en toda la universidad. Su ficha reúne lo necesario para programar: materias que puede impartir y disponibilidad semanal, sobre la misma cuadrícula del calendario.</p>
+    </div>
+    <div class="gallery" data-gallery>
+      <div class="track" tabindex="0" aria-label="Pantallas de profesores">
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/professors.webp" alt="Ficha de la profesora con materias que puede impartir y disponibilidad semanal"></div><figcaption><b>La ficha</b><span>Nombre, referencia externa, estado, materias calificadas y ventanas de disponibilidad con las clases ya asignadas encima.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/z-prof.webp" alt="Calendario filtrado por profesora con disponibilidad punteada"></div><figcaption><b>Disponibilidad en el calendario</b><span>Al filtrar por profesor se ven sus clases en todos los departamentos y dónde cabe una sesión más.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/sectioneditor.webp" alt="Editor de sección con conflicto de profesor"></div><figcaption><b>Asignar en la sección</b><span>La lista solo muestra profesores calificados. Si ya tiene clase a esa hora en cualquier departamento, la sección no se guarda.</span></figcaption></figure>
+      </div>
+      <div class="g-ctrl"><button type="button" data-dir="-1" aria-label="Anterior">‹</button><button type="button" data-dir="1" aria-label="Siguiente">›</button></div>
+    </div>
+    <div class="facts">
+      <div class="fact"><h3 class="h-m">1. Crear</h3><p>Nombre para mostrar y referencia externa. Sin datos de contacto.</p></div>
+      <div class="fact"><h3 class="h-m">2. Calificar y dar horario</h3><p>Materias que puede impartir y ventanas de lunes a sábado en intervalos de 15 minutos. Al abrir un cuatrimestre se copian del anterior.</p></div>
+      <div class="fact"><h3 class="h-m">3. Asignar</h3><p>Desde la sección o el calendario. No hay carga máxima: el único límite es no traslaparse.</p></div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th style="width:18%">Archivo</th><th style="width:52%">Columnas</th><th>Clave natural</th></tr></thead>
+        <tbody>
+          <tr><td>Profesores</td><td><code>external_ref, display_name, active</code></td><td>external_ref</td></tr>
+          <tr><td>Calificaciones</td><td><code>external_ref, department_code, course_code</code></td><td>profesor + materia</td></tr>
+          <tr><td>Disponibilidad</td><td><code>external_ref, term_code, day, start_time, end_time</code></td><td>profesor + cuatrimestre + día</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Plantillas propuestas con el mismo flujo de validación. En el plan del MVP los profesores se capturan en pantalla; el CSV se suma si las direcciones ya los tienen en hojas.</p>
+  </div>
+</section>
+
+<!-- ALUMNOS -->
+<section class="section band" id="alumnos">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><p class="eyebrow">03 · Alumnos</p><h2 class="h-l" style="margin-top:12px">Lo mínimo para <span class="hl">calcular la demanda</span>.</h2></div>
+      <p class="lead">Cada alumno se identifica solo por su ID universitario. Su versión de plan, su estado y su historial de aprobadas y reprobadas bastan para saber qué puede cursar el próximo cuatrimestre.</p>
+    </div>
+    <div class="gallery" data-gallery>
+      <div class="track" tabindex="0" aria-label="Pantallas de alumnos">
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/students.webp" alt="Lista de alumnos con panel de edición e historial"></div><figcaption><b>Lista y ficha</b><span>Filtros por plan y estado. El panel edita estado y versión de plan, muestra el historial (equivalencias incluidas) y en qué materias es elegible.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/importreview.webp" alt="Revisión de importación con tres errores por fila"></div><figcaption><b>Revisión de la importación</b><span>Conteo de nuevas, actualizadas y sin cambio, y un reporte de errores por fila, columna y valor.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/importhistory.webp" alt="Resultado de importación completa e historial"></div><figcaption><b>Resultado e historial</b><span>Cada importación queda registrada con su autor y sus conteos.</span></figcaption></figure>
+      </div>
+      <div class="g-ctrl"><button type="button" data-dir="-1" aria-label="Anterior">‹</button><button type="button" data-dir="1" aria-label="Siguiente">›</button></div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th style="width:18%">Orden · archivo</th><th style="width:52%">Columnas</th><th>Clave natural</th></tr></thead>
+        <tbody>
+          <tr><td>4 · Alumnos</td><td><code>university_id, department_code, plan_code, version_label, status</code></td><td>university_id</td></tr>
+          <tr><td>5 · Calificaciones</td><td><code>university_id, department_code, course_code, term_code, outcome</code></td><td>alumno + materia + cuatrimestre</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Estados: activo, baja temporal, egresado, baja. Resultados: aprobada o reprobada; cuenta la última aprobación. ID e historial se tratan como datos personales (LFPDPPP).</p>
+  </div>
+</section>
+
+<!-- PLANES -->
+<section class="section" id="planes">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><p class="eyebrow">04 · Planes de estudio</p><h2 class="h-l" style="margin-top:12px">Qué debe cursar <span class="hl">cada alumno</span>.</h2></div>
+      <p class="lead">Un plan tiene versiones y cada versión su lista de materias. Varias versiones pueden estar activas a la vez, y cada alumno pertenece a una. Con eso el sistema sabe qué le falta.</p>
+    </div>
+    <div class="tree" aria-label="Estructura de un plan">
+      <div class="t1"><b>Plan</b><span>LEN · Licenciatura en Enfermería</span></div>
+      <div class="t2"><b>Versiones</b><span>2018 y 2022 activas; 2014 inactiva</span></div>
+      <div class="t3"><b>Materias</b><span>Obligatorias u optativas, una vez por versión</span></div>
+    </div>
+    <div class="shot" style="margin-top:28px"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/plans.webp" alt="Plan LEN con pestañas de versión y materias obligatorias u optativas"></div>
+    <p class="note">Se importan con el archivo 3 · Materias por plan: <code>department_code, plan_code, version_label, course_code, type</code>. Una versión nueva se crea copiando la anterior.</p>
+  </div>
+</section>
+
+<!-- CUATRIMESTRE -->
+<section class="section dark" id="cuatrimestre">
+  <div class="wrap">
+    <p class="eyebrow">05 · Cuatrimestre</p>
+    <h2 class="h-l" style="margin-top:12px;max-width:20ch">Abrir un cuatrimestre es crear <span class="hl">el espacio donde se planea</span>.</h2>
+    <p class="lead" style="margin-top:20px">Un administrador lo crea con su clave y fechas. Se copia la disponibilidad de los profesores del anterior y cada dirección empieza a abrir secciones sobre un calendario vacío.</p>
+    <div class="life">
+      <div><span class="n">1 · Borrador</span><h3 class="h-m">Se planea</h3><p>Las direcciones abren secciones. Se permiten secciones sin profesor mientras se completa.</p></div>
+      <div><span class="n">2 · Publicado</span><h3 class="h-m">Se comparte</h3><p>Toda sección tiene profesor y al menos una sesión. Se exporta y aún se puede ajustar.</p></div>
+      <div><span class="n">3 · Finalizado</span><h3 class="h-m">Se cierra</h3><p>Solo lectura para todos. Exportar sigue disponible.</p></div>
+    </div>
+  </div>
+</section>
+<section class="section band" style="padding-top:clamp(48px,7vw,88px)">
+  <div class="wrap">
+    <div class="mod-head">
+      <div><p class="eyebrow">Qué se planea dentro</p><h2 class="h-l" style="margin-top:12px">Secciones, guiadas por <span class="hl">la demanda</span>.</h2></div>
+      <p class="lead">Una sección es materia, letra, cupo, profesor y una o varias sesiones por semana. Se puede compartir con otros departamentos, y su demanda suma a los elegibles de todos.</p>
+    </div>
+    <div class="gallery" data-gallery>
+      <div class="track" tabindex="0" aria-label="Pantallas del cuatrimestre">
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/terms.webp" alt="Lista de cuatrimestres con su estado y bloqueos"></div><figcaption><b>Cuatrimestres</b><span>Estado, fechas, secciones y bloqueos de cada uno. Las direcciones consultan; el administrador crea, publica y finaliza.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/termmodals.webp" alt="Modales Nuevo cuatrimestre, Publicar y Finalizar"></div><figcaption><b>Crear, publicar, finalizar</b><span>Publicar lista lo que falta. Finalizar pide escribir la clave y no se deshace.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/eligibility.webp" alt="Elegibilidad por materia con cobertura"></div><figcaption><b>Elegibilidad</b><span>Elegibles por materia y versión de plan, cupo contra demanda y acceso directo a abrir una sección donde falta.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/sections.webp" alt="Lista de secciones propias y compartidas"></div><figcaption><b>Secciones</b><span>Propias y compartidas, con profesor, sesiones, cupo, demanda y estado.</span></figcaption></figure>
+        <figure><div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/sectioneditor.webp" alt="Editor de sección con sesiones y opciones para compartir"></div><figcaption><b>Editor de sección</b><span>Sesiones por día y hora, profesor calificado, cupo y con quién se comparte. Los errores se explican junto al campo.</span></figcaption></figure>
+      </div>
+      <div class="g-ctrl"><button type="button" data-dir="-1" aria-label="Anterior">‹</button><button type="button" data-dir="1" aria-label="Siguiente">›</button></div>
+    </div>
+  </div>
+</section>
+
+<!-- CALENDARIO -->
+<section class="cal-hero" id="calendario">
+  <div class="wrap">
+    <p class="eyebrow">06 · El calendario</p>
+    <h2 class="h-xl">Donde todo converge.</h2>
+    <p class="lead">Materias, profesores, disponibilidad y secciones propias y compartidas, en una sola semana de lunes a sábado y en hora del campus.</p>
+  </div>
+</section>
+<section class="section" style="padding-top:clamp(32px,5vw,64px)">
+  <div class="wrap">
+    <div class="story">
+      <div class="steps">
+        <article class="step on" data-img="0"><span class="k">Vista semanal</span><h3 class="h-l" style="font-size:clamp(28px,3.4vw,42px)">Una semana, todos los departamentos.</h3><p>Propias en tinto y compartidas en su color. La cuadrícula rayada marca lo que queda fuera del horario operativo: lunes a viernes de 18:00 a 21:00 y sábado de 09:00 a 15:00.</p><img class="inline shot" loading="lazy" src="img/calendar.webp" alt="Vista semanal del calendario"></article>
+        <article class="step" data-img="1"><span class="k">Conflictos a la vista</span><h3 class="h-l" style="font-size:clamp(28px,3.4vw,42px)">Un clic dice qué pasa y cómo resolverlo.</h3><p>El detalle muestra profesor, sesiones, cupo contra demanda y con quién se comparte. Un conflicto se marca en rojo y explica qué choca.</p><img class="inline shot" loading="lazy" src="img/z-sel.webp" alt="Detalle de sección con conflicto"></article>
+        <article class="step" data-img="2"><span class="k">Por profesor</span><h3 class="h-l" style="font-size:clamp(28px,3.4vw,42px)">Ver dónde cabe una clase más.</h3><p>El filtro por profesor reúne sus clases de todos los departamentos y dibuja su disponibilidad punteada en verde. También hay filtros por plan y por secciones propias o compartidas.</p><img class="inline shot" loading="lazy" src="img/z-prof.webp" alt="Calendario filtrado por profesora"></article>
+        <article class="step" data-img="3"><span class="k">Crear desde la semana</span><h3 class="h-l" style="font-size:clamp(28px,3.4vw,42px)">Clic en un espacio libre.</h3><p>Abre una sesión en ese día y hora, sugiere materias con demanda y solo ofrece profesores calificados y disponibles. Más opciones lleva al editor completo.</p><img class="inline shot" loading="lazy" src="img/z-qc.webp" alt="Panel Nueva sesión"></article>
+        <article class="step" data-img="4"><span class="k">Cierre</span><h3 class="h-l" style="font-size:clamp(28px,3.4vw,42px)">Finalizado, en solo lectura.</h3><p>El mismo calendario sin crear ni mover sesiones. La exportación sigue disponible.</p><img class="inline shot" loading="lazy" src="img/z-final.webp" alt="Calendario de cuatrimestre finalizado"></article>
+      </div>
+      <div class="stage" aria-hidden="true">
+        <div class="shot"><div class="chrome"><span></span><span></span><span></span></div>
+          <div class="imgs">
+            <img class="on" src="img/calendar.webp" alt="">
+            <img loading="lazy" src="img/calendar-sel.webp" alt="">
+            <img loading="lazy" src="img/calendar-prof.webp" alt="">
+            <img loading="lazy" src="img/calendar-qc.webp" alt="">
+            <img loading="lazy" src="img/calendar-final.webp" alt="">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mod-head" style="margin-top:clamp(56px,8vw,112px)">
+      <div><p class="eyebrow">Reglas</p><h2 class="h-l" style="margin-top:12px">Lo que se revisa <span class="hl">en cada cambio</span>.</h2></div>
+      <p class="lead">Las mismas reglas aplican al guardar una sección, al moverla en el calendario y al importar. Un error impide guardar; una advertencia avisa y deja continuar.</p>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Regla</th><th style="width:22%">Tipo</th></tr></thead>
+        <tbody>
+          <tr><td>Día de lunes a sábado; domingo nunca</td><td><span class="tag t-err">Error</span></td></tr>
+          <tr><td>Inicio antes que fin, el mismo día</td><td><span class="tag t-err">Error</span></td></tr>
+          <tr><td>Dentro del horario operativo del día</td><td><span class="tag t-warn">Advertencia</span></td></tr>
+          <tr><td>Las sesiones de una misma sección no se traslapan</td><td><span class="tag t-err">Error</span></td></tr>
+          <tr><td>Profesor calificado para la materia</td><td><span class="tag t-err">Error</span></td></tr>
+          <tr><td>Cada sesión dentro de la disponibilidad del profesor</td><td><span class="tag t-err">Error</span></td></tr>
+          <tr><td>Profesor sin otra clase a esa hora, en ningún departamento</td><td><span class="tag t-err">Error</span></td></tr>
+          <tr><td>Cupo entero mayor a cero</td><td><span class="tag t-err">Error</span></td></tr>
+          <tr><td>Cuatrimestre en borrador o publicado</td><td><span class="tag t-err">Error</span></td></tr>
+          <tr><td>Sección sin profesor mientras el cuatrimestre es borrador</td><td><span class="tag t-ok">Permitido</span></td></tr>
+          <tr><td>Publicar: toda sección con profesor y al menos una sesión</td><td><span class="tag t-err">Error</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <p class="note">Dos sesiones seguidas (una termina a las 19:30 y otra empieza a las 19:30) sí se permiten. Cuadrícula de 15 minutos, siempre en hora del campus (Guadalajara).</p>
+
+    <div class="mod-head" style="margin-top:clamp(56px,8vw,112px);align-items:center">
+      <div><p class="eyebrow">Exportar</p><h2 class="h-l" style="margin-top:12px">El horario final, <span class="hl">listo para recapturar</span>.</h2><p class="lead" style="margin-top:16px">Una fila por sesión, por departamento, con o sin las secciones compartidas. Disponible para cuatrimestres publicados y finalizados.</p></div>
+      <div class="shot"><div class="chrome" aria-hidden="true"><span></span><span></span><span></span></div><img loading="lazy" src="img/export.webp" alt="Modal Exportar horario a CSV con vista previa"></div>
+    </div>
+  </div>
+</section>
+
+<section class="section band" id="hitos">
+  <div class="wrap">
+    <p class="eyebrow">Hitos</p>
+    <h2 class="h-l" style="margin-top:12px">Ocho etapas; <span class="hl">el calendario se usa desde M6</span>.</h2>
+    <div class="tl">
+      <div><b>M0</b><span>Acuerdos, hojas de ejemplo y plantillas</span></div>
+      <div><b>M1</b><span>Acceso por invitación, roles y respaldos</span></div>
+      <div><b>M2</b><span>Materias, planes y profesores</span></div>
+      <div><b>M3</b><span>Alumnos e importaciones</span></div>
+      <div><b>M4</b><span>Cuatrimestre, secciones y validaciones</span></div>
+      <div><b>M5</b><span>Elegibilidad y secciones compartidas</span></div>
+      <div class="now"><b>M6</b><span>Calendario y exportación</span></div>
+      <div><b>M7</b><span>Piloto con dos direcciones</span></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap"><span>Horarios UAG · Propuesta para kickoff · Octubre 2026</span><span>Pantallas con datos de ejemplo</span></div>
+</footer>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
